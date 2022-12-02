@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gerador de Links para Whatsapp</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <h1>Gerador de link para Whatsapp</h1>
+        </div>
+    </header>
+    <main>
+        <div class="input-numero">
+            <label for="numero" ><p>Numero de Telefone</p></label>
+            <input type="text" id="numero" name="numero" placeholder="(XX) X XXXX-XXXX" maxlength="11">
+        </div>
+        <div class="input-mensagem">
+            <label for="mensagem" id="container-mensagem"><p>Escreva sua mensagem</p></label>
+            <input type="text" id="mensagem" name="mensagem" placeholder="Escreva o texto">
+        </div>
+        <button class="botao" onclick="gerarLink()">Enviar</button>
+    </main>
+
+    <script src="assets/js/gerarlink.js"></script>
+    <script src="assets/js/jquery.mask.js"></script>
+    <script type="text/javascript">
+        $('#numero').mask('(99) 9 9999-9999')
+    </script>
+
+</body>
+</html>

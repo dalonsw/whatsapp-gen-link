@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.container-header {
+    padding: 1rem;
+    background-color: #26d367;
+}
+
+.container-header h1{
+    color: #fff;
+    font-size: 20pt;
+}
+
+.input-mensagem, .input-numero { 
+    display: flex;
+    margin: 15px; 
+    padding: 5px;
+    border: solid 1px rgb(173, 173, 173);
+    border-radius: 5px;
+    width: 15em;
+    height: 2em;
+    flex-direction: column;position: relative;
+    cursor: pointer;
+
+}
+
+.input-mensagem input, .input-numero input{
+    padding-top: 3px;
+    margin-left: 30px;
+    border: inset 0 ;
+    outline: 0;
+    cursor: pointer;
+}
+
+.input-mensagem label, .input-numero label {
+    cursor: pointer;
+}
+
+.input-mensagem p, .input-numero p{
+    font-size: 8pt;
+    margin-left: 30px;
+}
+
+.input-mensagem label::before{
+    content: "";
+    margin: 8px 5px;
+    height: 16px;
+    width: 16px;
+    background-image: url(../images/icons/comentario-alt.png);
+    position: absolute;
+}
+
+.input-numero label::before{
+    content: "";
+    margin: 8px 5px;
+    height: 16px;
+    width: 16px;
+    background-image: url(../images/icons/chamada-telefonica.png);
+    position: absolute;
+}
+
+.botao{
+    background-color: #26d367;
+    color: #fff;
+    border: unset;
+    border-radius: 10px;
+    width: 8em;
+    height: 4em;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.botao:hover{
+    background-color: #13b351;
+
+}
