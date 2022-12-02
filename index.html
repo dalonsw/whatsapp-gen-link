@@ -16,18 +16,30 @@
         </div>
     </header>
     <main>
-        <div class="input-numero">
-            <label for="numero" ><p>Numero de Telefone</p></label>
-            <input type="text" id="numero" name="numero" placeholder="(XX) X XXXX-XXXX" maxlength="11">
+        <div class="input-link">
+            <label for="link"><p>Link Gerado</p>
+            </label>
+            <input type="text" id="link" name="link">
         </div>
-        <div class="input-mensagem">
-            <label for="mensagem" id="container-mensagem"><p>Escreva sua mensagem</p></label>
-            <input type="text" id="mensagem" name="mensagem" placeholder="Escreva o texto">
+        <div class="formulario">
+            <div class="input-numero">
+                <label for="numero" ><p>Numero de Telefone</p></label>
+                <input type="text" id="numero" name="numero" placeholder="(XX) X XXXX-XXXX" maxlength="11">
+            </div>
+            <div class="input-mensagem">
+                <label for="mensagem" id="container-mensagem"><p>Escreva sua mensagem</p></label>
+                <input type="text" id="mensagem" name="mensagem" placeholder="Escreva o texto">
+            </div>
         </div>
-        <button class="botao" onclick="gerarLink()">Enviar</button>
+        <button class="botao" id="botao-gerar" onclick="gerarLink()">Enviar</button>
+        <button class="botao" onclick="copyText()" id="botao-copiar-link"> Copiar link</button>
+        <button class="botao" onclick="gerarOutroLink()" id="botao-gerar-outro">Gerar outro Link</button>
+        <div class="erro">
+            <p>Insira o Número de telefone!</p>
+        </div>
     </main>
 
-    <script src="assets/js/gerarlink.js"></script>
+    <script src="assets/js/index.js"></script>
     <script src="assets/js/jquery.mask.js"></script>
     <script type="text/javascript">
         $('#numero').mask('(99) 9 9999-9999')
