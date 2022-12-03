@@ -17,9 +17,18 @@ body{
     font-size: 20pt;
 }
 
+.principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.banner {
+    height: 100vh;
+}
+
 .input-mensagem, .input-numero{ 
     display: flex;
-    margin: 15px; 
+    margin: 15px;
     padding: 5px;
     border: solid 1px rgb(173, 173, 173);
     border-radius: 5px;
@@ -90,7 +99,7 @@ body{
     background-color: #128c7e;
     color: #fff;
     border: unset;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 8em;
     height: 4em;
     cursor: pointer;
@@ -117,4 +126,17 @@ body{
     position: fixed;
     bottom: 0; 
     transition: 1s;
+}
+
+.explicacao{
+    margin: 15px;
+    width: 30vw;
+}
+
+.explicacao ol{
+    margin-left: 30px;
+}
+
+.explicacao p{
+    font-size: 8pt;
 }
