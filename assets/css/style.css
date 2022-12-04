@@ -10,13 +10,14 @@ body{
 }
 
 .container-header {
-    padding: 2rem;
+    padding: 1.5rem 0;
     background-color: #128c7e;
     display: flex;
     align-items: center;
 }
 
 .container-header img{
+    margin-left: 25px;
     width: 48px;
 }
 
@@ -33,7 +34,7 @@ body{
 }
 
 .principal section{
-    margin: 15px;
+    margin: 15px 0;
     width: 40rem;
     display: flex;
     align-self: center; 
@@ -42,7 +43,7 @@ body{
 
 .input-mensagem, .input-numero{ 
     display: flex;
-    margin: 15px;
+    margin: 15px 0;
     padding: 5px;
     border: solid 1px rgb(173, 173, 173);
     border-radius: 5px;
@@ -54,7 +55,7 @@ body{
 
 .input-link { 
     display: none;
-    margin: 15px; 
+    margin: 15px 0; 
     padding: 5px;
     border: solid 1px #adadad;
     border-radius: 5px;
@@ -157,7 +158,13 @@ body{
 }
 
 .explicacao{
-    margin-top: 100px;
+    margin: 100px 5%;
+}
+
+.explicacao h2{
+    color: #707070;
+    margin: 0;
+
 }
 
 .explicacao ol{
@@ -169,15 +176,37 @@ body{
 }
 
 .explicacao li p{
-    color: black;
+    color: #707070;
     font-size: 15pt;
     font-style: normal;
     font-weight: normal;
-
+    list-style: none;
 }
 
 .descricao {
     text-align: center;
     font-size: 10pt;
     margin: 10%;
+}
+
+@media screen and (max-width: 768px ) {
+    .botoes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .botao{
+        font-size: 16pt;
+        margin: 10px;
+        background-color: #128c7e;
+        color: #fff;
+        border: unset;
+        border-radius: 4px;
+        width: 12em;
+        height: 2.5em;
+        cursor: pointer;
+        transition: 250ms;
+    }
 }
