@@ -1,1 +1,366 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";*{padding:0;margin:0}body{font-family:'Roboto',sans-serif}.container-header{padding:1rem 0;background-color:#128c7e;display:flex;align-items:center;justify-content:space-between}.logo{display:flex;align-items:center}.container-header a{text-decoration:none}.container-header img{margin-left:25px;width:48px}.container-header h1{color:#fff;font-size:16pt;padding-left:15px}.navegacao{justify-self:right}.navegacao ul{list-style:none;display:flex;padding-right:1rem}.navegacao ul li{padding:0 15px}.navegacao a{color:#fff;text-decoration:none}.menu-navegacao{background-color:#0a5b52;height:200vh;width:100vw;position:absolute;z-index:999;display:none;justify-content:center;padding-top:5rem}.menu-navegacao .whatsapp-logo{width:48px;position:fixed;top:18px;left:25px}.menu-navegacao button{position:fixed;right:35px;top:25px;background-color:unset;border:0}.menu-navegacao button img{width:30px}.menu-navegacao ul{margin:10px 0;list-style:none}.menu-navegacao ul li{width:90vw;padding:15px 0;border-bottom:solid 1px #128c7e}.menu-navegacao ul li a{text-decoration:none;color:#fff}.container-header button{background-color:unset;border:0;padding-right:25px;cursor:pointer;display:none}.principal{display:flex;justify-content:center}.principal section{margin:15px 0;width:40rem;display:flex;align-self:center;flex-direction:column}.input-mensagem,.input-numero{display:flex;margin:15px 0;padding:5px;border:solid 1px #adadad;border-radius:5px;height:3em;flex-direction:column;position:relative;cursor:pointer}.input-link{display:none;margin:15px 0;padding:5px;border:solid 1px #adadad;border-radius:5px;height:3em;flex-direction:column;position:relative;cursor:pointer}.input-mensagem input,.input-numero input,.input-link input{padding-top:.1rem;margin-left:2.8rem;border:inset 0;outline:0;cursor:pointer;font-size:12pt}.input-mensagem label,.input-numero label,.input-link label{cursor:pointer}.input-mensagem p,.input-numero p,.input-link p{font-size:8pt;margin-left:2.8rem;margin-top:8px;color:#adadad}.input-mensagem label::before{content:"";margin:10px;height:24px;width:24px;background-image:url(../images/icons/comente.png);position:absolute}.input-numero label::before{content:"";margin:10px;height:24px;width:24px;background-image:url(../images/icons/silhueta-de-alca-de-telefone.png);position:absolute}.input-link label::before{content:"";margin:10px;height:24px;width:24px;background-image:url(../images/icons/link-quebrado.png);position:absolute}.botoes{display:flex;justify-content:center}.botao{font-weight:600;font-size:18pt;margin:10px;background-color:#128c7e;color:#fff;border:unset;border-radius:4px;width:12em;height:3em;cursor:pointer;transition:250ms}.botao:hover{background-color:#035a4f}#botao-gerar-outro,#botao-copiar-link{display:none}.aviso{text-align:center;color:#707070;font-size:10pt}.erro{display:none;opacity:0;justify-content:center;align-items:center;width:100vw;height:10vh;background-color:red;color:#fff;position:fixed;bottom:0;transition:1s}.explicacao{margin:100px 5%;margin-bottom:0}.explicacao h2{color:#707070;margin:0}.explicacao ol{margin-left:30px;color:#035a4f;font-size:18pt;font-style:oblique;font-weight:bolder}.explicacao li p{color:#707070;font-size:15pt;font-style:normal;font-weight:400}.explicacao span{font-weight:600}.explicacao h3{font-size:15pt;font-weight:400;margin:20px 0;color:#035a4f}.descricao{text-align:center;font-size:10pt;margin:0 10%;margin-bottom:5%}@media screen and (max-width: 1090px){.container-header button{display:block}.navegacao ul{list-style:none;display:none;padding-right:1rem}}@media screen and (max-width: 768px ){.input-mensagem,.input-numero,.input-link{margin:15px}.botoes{display:flex;justify-content:center;align-items:center;flex-direction:column}.botao{font-size:16pt;width:12em;height:2.5em}}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container-header {
+    padding: 1rem 0;
+    background-color: #128c7e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.container-header a{
+    text-decoration: none;
+}
+
+.container-header img{
+    margin-left: 25px;
+    width: 48px;
+}
+
+.container-header h1{
+    color: #fff;
+    font-size: 16pt;
+    padding-left: 15px;
+}
+
+.navegacao{
+    justify-self: right;
+}
+
+.navegacao ul{
+    list-style: none;
+    display: flex;
+    padding-right: 1rem;
+
+}
+
+.navegacao ul li{
+    padding: 0 15px;
+}
+
+.navegacao a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-navegacao{
+    background-color: #0a5b52;
+    height: 200vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.menu-navegacao .whatsapp-logo{
+    width: 48px;
+    position: fixed;
+    top: 18px;
+    left: 25px;
+}
+
+.menu-navegacao button{
+    position: fixed;
+    right: 35px;
+    top: 25px;
+    background-color: unset;
+    border: 0;
+}
+
+.menu-navegacao button img{
+    width: 30px;
+}
+
+.menu-navegacao ul{
+    margin: 10px 0;
+    list-style: none;
+}
+
+.menu-navegacao ul li{
+    width: 90vw;
+    padding: 15px 0;
+    border-bottom: solid 1px #128c7e;
+}
+
+.menu-navegacao ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container-header button{
+    background-color: unset;
+    border: 0;
+    padding-right: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.principal{
+    margin: 15px 0;
+    width: 40rem;
+    display: flex;
+    align-self: center; 
+    flex-direction: column;
+}
+
+.input-mensagem, .input-numero{ 
+    display: flex;
+    margin: 15px 0;
+    padding: 5px;
+    border: solid 1px rgb(173, 173, 173);
+    border-radius: 5px;
+    height: 3em;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+}
+
+.input-link { 
+    display: none;
+    margin: 15px 0; 
+    padding: 5px;
+    border: solid 1px #adadad;
+    border-radius: 5px;
+    height: 3em;
+    flex-direction: column;position: relative;
+    cursor: pointer;
+}
+
+.input-mensagem input, .input-numero input, .input-link input{
+    padding-top: 0.1rem;
+    margin-left: 2.8rem;
+    border: inset 0 ;
+    outline: 0;
+    cursor: pointer;
+    font-size: 12pt;
+}
+
+.input-mensagem label, .input-numero label, .input-link label {
+    cursor: pointer;
+}
+
+.input-mensagem p, .input-numero p, .input-link p{
+    font-size: 8pt;
+    margin-left: 2.8rem;
+    margin-top: 8px;
+    color: #adadad;
+}
+
+.input-mensagem label::before{
+    content: "";
+    margin: 10px;
+    height: 24px;
+    width: 24px;
+    background-image: url(../images/icons/comente.png);
+    position: absolute;
+}
+
+.input-numero label::before{
+    content: "";
+    margin: 10px;
+    height: 24px;
+    width: 24px;
+    background-image: url(../images/icons/silhueta-de-alca-de-telefone.png);
+    position: absolute;
+}
+
+.input-link label::before{
+    content: "";
+    margin: 10px;
+    height: 24px;
+    width: 24px;
+    background-image: url(../images/icons/link-quebrado.png);
+    position: absolute;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+
+.botao{
+    font-weight: 600;
+    font-size: 18pt;
+    margin: 10px;
+    background-color: #128c7e;
+    color: #fff;
+    border: unset;
+    border-radius: 4px;
+    width: 12em;
+    height: 3em;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.botao:hover{
+    background-color: #035a4f;
+}
+
+
+#botao-gerar-outro, #botao-copiar-link{
+    display: none;
+}
+
+.aviso {
+    text-align: center;
+    color: #707070;
+    font-size: 10pt;
+}
+
+.erro{
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: #ff0000;
+    color: #fff;
+    position: fixed;
+    bottom: 0; 
+    transition: 1s;
+}
+
+.explicacao{
+    margin: 50px 5%;
+    margin-bottom: 0;
+}
+
+.explicacao h2{
+    color: #707070;
+    margin: 0;
+
+}
+
+.explicacao ol{
+    margin-left: 30px;
+    color: #035a4f;
+    font-size: 18pt;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.explicacao li p{
+    color: #707070;
+    font-size: 15pt;
+    font-style: normal;
+    font-weight: normal;
+    
+}
+
+.explicacao span {
+    font-weight: 600;
+}
+
+.explicacao h3{
+    font-size: 15pt;
+    font-weight: normal;
+    margin: 20px 0;
+    color: #035a4f;
+}
+
+.descricao {
+    display: inline;
+    text-align: center;
+    font-size: 10pt;
+    margin: 0 10%;
+    padding: auto;
+}
+
+.rodape {
+    margin-top: 1%;
+    background-color: #1C1E21;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rodape h5{
+    color: #fff;
+    margin-left: 20px;
+    font-size: 8pt;
+}
+
+.rodape ul{
+    list-style: none;
+    margin: 20px;
+    display: flex;
+}
+
+.rodape ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 8pt;
+    margin: 6px;
+}
+
+@media screen and (max-width: 1090px) {
+    .container-header button{
+        display: block;
+    }
+    .navegacao ul{
+        list-style: none;
+        display: none;
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px ) {
+    .principal{
+        width: 90%;
+    }
+
+    main {
+        height: initial;
+    }
+    .input-mensagem, .input-numero,     .input-link { 
+        margin: 15px;
+    }
+
+    .botoes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .botao{
+        font-size: 16pt;
+        width: 12em;
+        height: 2.5em;
+
+    }
+
+    .rodape ul{
+        flex-direction: column;
+    }
+}
