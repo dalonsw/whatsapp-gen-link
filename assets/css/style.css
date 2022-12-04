@@ -59,7 +59,7 @@ body{
 
 .menu-navegacao{
     background-color: #0a5b52;
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
     position: absolute;
     z-index: 999;
@@ -267,7 +267,7 @@ body{
     font-size: 15pt;
     font-style: normal;
     font-weight: normal;
-    list-style: none;
+    
 }
 
 .explicacao span {
