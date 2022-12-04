@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
 }
 
 body{
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container-header {
@@ -18,12 +20,15 @@ body{
 }
 
 .principal {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+
 }
 
-.banner {
-    height: 100vh;
+.principal section{
+    display: flex;
+    align-self: center; 
+    flex-direction: column;
 }
 
 .input-mensagem, .input-numero{ 
@@ -32,9 +37,9 @@ body{
     padding: 5px;
     border: solid 1px rgb(173, 173, 173);
     border-radius: 5px;
-    width: 15em;
     height: 2em;
-    flex-direction: column;position: relative;
+    flex-direction: column;
+    position: relative;
     cursor: pointer;
 }
 
@@ -51,7 +56,7 @@ body{
 }
 
 .input-mensagem input, .input-numero input, .input-link input{
-    padding-top: 3px;
+    padding-top: 1px;
     margin-left: 30px;
     border: inset 0 ;
     outline: 0;
@@ -63,8 +68,9 @@ body{
 }
 
 .input-mensagem p, .input-numero p, .input-link p{
-    font-size: 8pt;
+    font-size: 6pt;
     margin-left: 30px;
+    margin-top: 2px;
 }
 
 .input-mensagem label::before{
@@ -94,20 +100,29 @@ body{
     position: absolute;
 }
 
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+
 .botao{
     margin: 10px;
     background-color: #128c7e;
     color: #fff;
     border: unset;
-    border-radius: 15px;
-    width: 8em;
-    height: 4em;
+    border-radius: 4px;
+    width: 10em;
+    height: 3em;
     cursor: pointer;
     transition: 250ms;
 }
 
 .botao:hover{
     background-color: #035a4f;
+}
+
+#botao-gerar{
+
 }
 
 #botao-gerar-outro, #botao-copiar-link{

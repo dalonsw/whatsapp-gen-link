@@ -27,17 +27,19 @@
             </div>
             <div class="formulario">
                 <div class="input-numero">
-                    <label for="numero" ><p>Numero de Telefone</p></label>
+                    <label for="numero" ><p>NÚMERO DE TELEFONE</p></label>
                     <input type="text" id="numero" name="numero" placeholder="(XX) X XXXX-XXXX" maxlength="11">
                 </div>
                 <div class="input-mensagem">
-                    <label for="mensagem" id="container-mensagem"><p>Escreva sua mensagem</p></label>
+                    <label for="mensagem" id="container-mensagem"><p>ESCREVA SUA MENSAGEM</p></label>
                     <input type="text" id="mensagem" name="mensagem" placeholder="Escreva o texto">
                 </div>
             </div>
-            <button class="botao" id="botao-gerar" onclick="gerarLink()">Enviar</button>
-            <button class="botao" onclick="copyText()" id="botao-copiar-link"> Copiar link</button>
-            <button class="botao" onclick="gerarOutroLink()" id="botao-gerar-outro">Gerar outro Link</button>
+            <div class="botoes">
+                <button class="botao" id="botao-gerar" onclick="gerarLink()">GERAR LINK</button>
+                <button class="botao" onclick="copyText()" id="botao-copiar-link"> Copiar link</button>
+                <button class="botao" onclick="gerarOutroLink()" id="botao-gerar-outro">Gerar outro Link</button>
+            </div>
             <article class="explicacao">
                 <h2>Como Funciona</h2>
                 <ol>
@@ -51,19 +53,6 @@
                 </p>
             </article>
         </section>
-        <article class="banner">
-            <h2>Aumente as Vendas pelo WhatsApp ainda Hoje!</h2>
-            <img src="assets/images/whatsapp-guia-gerador-e1662639340421.png">
-            <ul>
-                <li>Vendas Recorrentes</li>
-                <li>Um guia prático e usual</li>
-                <li>Crie uma máquina de vendas</li>
-                <li>Duplique ou Triplique seus lucros</li>
-                <li>Até 7 bônus HOJE!</li>
-            </ul>
-            <a target="_blank" href="https://www.marketingwhats.com.br/?utm_source=Digital&utm_medium=Start&utm_campaign=GeradorBotao"><button class="botao">Tenho interesse!</button></a>
-            
-        </article>
     </main>
     <div class="erro">
         <p>Insira o Número de telefone!</p>
