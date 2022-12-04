@@ -14,16 +14,25 @@
 </head>
 <body>
     <header>
-        <div class="container-header">
+        <nav class="container-header">
+            <img src="assets/images/whatsapp.png" alt="whatsapp logo">
             <h1>Gerador de link para Whatsapp</h1>
-        </div>
+            <div class="menu-navegacao">
+                <ul>
+                    <li><a target="_blank" href="https://web.whatsapp.com">WhatsApp Web</a></li>
+                    <li><a target="_blank" href="https://www.marketingwhats.com.br/?utm_source=Digital&utm_medium=Start&utm_campaign=GeradorBotao">Aumente suas Vendas</a></li>
+                </ul>
+            </div>
+        </nav>
+
     </header>
     <main class="principal">
         <section>
             <div class="input-link">
-                <label for="link"><p>Link Gerado</p>
+                <label for="link"><p>LINK GERADO</p>
                 </label>
                 <input type="text" id="link" name="link">
+                <h2>Pronto! Copie e compartilhe com usuários do Whatsapp!</h2>
             </div>
             <div class="formulario">
                 <div class="input-numero">
@@ -37,23 +46,24 @@
             </div>
             <div class="botoes">
                 <button class="botao" id="botao-gerar" onclick="gerarLink()">GERAR LINK</button>
-                <button class="botao" onclick="copyText()" id="botao-copiar-link"> Copiar link</button>
-                <button class="botao" onclick="gerarOutroLink()" id="botao-gerar-outro">Gerar outro Link</button>
+                <button class="botao" onclick="copyText()" id="botao-copiar-link">COPIAR LINK</button>
+                <button class="botao" onclick="gerarOutroLink()" id="botao-gerar-outro">GERAR OUTRO LINK</button>
             </div>
+            <p class="aviso">Não guardamos nenhum dado informado.</p>
             <article class="explicacao">
                 <h2>Como Funciona</h2>
                 <ol>
-                    <li>Insira o nº do WhatsApp Ex: 85 9 9660-5866</li>
-                    <li>Escreva a mensagem padrão que será exibida</li>
-                    <li>Clique em “<span>GERAR LINK</span>"</li>
-                    <li>Copie o link e compartilhe</li>
+                    <li><p>Insira o nº do WhatsApp Ex: 85 9 9660-5866</p></li>
+                    <li><p>Escreva a mensagem padrão que será exibida</p></li>
+                    <li><p>Clique em “<span>GERAR LINK</span>"</p></li>
+                    <li><p>Copie o link e compartilhe</p></li>
                 </ol>
                 <h3>OBS: Antes de usar, faça o teste</h3>
-                <p>O gerador de links para o WhatsApp é uma ótima ferramenta para ações de marketing ou relacionamento. Com o link para mensagens personalizadas do WhatsApp, você poderá utilizar em campanhas, redes sociais, email marketing, banners e etc. O bom de encurtar e personalizar links e mensagens do WhatsApp é que funcionará no desktop e no mobile da mesma forma. Faça bom uso da ferramenta encurtadora de WhatsApp.
-                </p>
             </article>
         </section>
     </main>
+    <p class="descricao">O gerador de links para o WhatsApp é uma ótima ferramenta para ações de marketing ou relacionamento. Com o link para mensagens personalizadas do WhatsApp, você poderá utilizar em campanhas, redes sociais, email marketing, banners e etc. O bom de encurtar e personalizar links e mensagens do WhatsApp é que funcionará no desktop e no mobile da mesma forma. Faça bom uso da ferramenta encurtadora de WhatsApp.
+    </p>
     <div class="erro">
         <p>Insira o Número de telefone!</p>
     </div>

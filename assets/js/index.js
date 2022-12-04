@@ -26,7 +26,8 @@ function gerarLink() {
     $("#link").val(link);
     $('#botao-gerar').css("display", "none");
     $('#botao-copiar-link').css("display", "inline-block");
-    $('#botao-gerar-outro').css("display", "inline-block");;
+    $('#botao-gerar-outro').css("display", "inline-block");
+    $('.aviso').css("display", "none");
     } 
 }
 
@@ -58,6 +59,7 @@ function gerarOutroLink(){
     $('#mensagem').val("");
     $('#botao-gerar').css("display", "block");
     $('#botao-copiar-link').css("display", "none");
-    $('#botao-gerar-outro').css("display", "none");;
+    $('#botao-gerar-outro').css("display", "none");
+    $('.aviso').css("display", "block");
     
 }
