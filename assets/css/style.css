@@ -363,10 +363,5 @@ main {
         font-size: 16pt;
         width: 12em;
         height: 2.5em;
-
-    }
-
-    .rodape ul{
-        flex-direction: column;
     }
 }
