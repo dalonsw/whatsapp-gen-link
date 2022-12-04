@@ -237,7 +237,7 @@ main {
 }
 
 .erro{
-    display: flex;
+    display: none;
     opacity: 0;
     justify-content: center;
     align-items: center;
@@ -311,8 +311,9 @@ main {
 }
 
 .rodape ul{
+    cursor: pointer;
     list-style: none;
-    margin: 20px;
+    margin: 10px;
     display: flex;
 }
 
