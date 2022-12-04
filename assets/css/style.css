@@ -132,6 +132,10 @@ main {
     flex-direction: column;
 }
 
+.principal li {
+    margin-left: 20px;
+}
+
 .input-mensagem, .input-numero{ 
     display: flex;
     margin: 15px 0;
