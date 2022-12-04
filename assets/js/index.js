@@ -61,5 +61,24 @@ function gerarOutroLink(){
     $('#botao-copiar-link').css("display", "none");
     $('#botao-gerar-outro').css("display", "none");
     $('.aviso').css("display", "block");
-    
+}
+
+function unloadScrollBars() {
+    document.documentElement.style.overflow = 'hidden';
+    document.body.scroll = "no";
+}
+
+function reloadScrollBars() {
+    document.documentElement.style.overflow = 'auto';
+    document.body.scroll = "yes";
+}
+
+function abrirMenu(){
+    $(".menu-navegacao").css("display", "flex")
+    unloadScrollBars()
+}
+
+function fecharMenu(){
+    $(".menu-navegacao").css("display", "none")
+    reloadScrollBars()
 }
