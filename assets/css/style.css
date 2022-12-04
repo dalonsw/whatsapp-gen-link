@@ -296,22 +296,23 @@ main {
     display: inline;
     text-align: center;
     font-size: 10pt;
-    margin: 0 10%;
+    margin: 2% 10%;
     padding: auto;
 }
 
 .rodape {
-    margin-top: 1%;
     background-color: #1C1E21;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .rodape h5{
+    margin-top: 10px;
     color: #fff;
     margin-left: 20px;
-    font-size: 8pt;
+    font-size: 10pt;
 }
 
 .rodape ul{
@@ -324,7 +325,7 @@ main {
 .rodape ul li a{
     text-decoration: none;
     color: #fff;
-    font-size: 8pt;
+    font-size: 10pt;
     margin: 6px;
 }
 
