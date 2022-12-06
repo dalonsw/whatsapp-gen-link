@@ -124,6 +124,11 @@ main {
     flex-direction: column;
 }
 
+.site {
+    display: flex;
+    justify-content: space-around;
+}
+
 .principal{
     margin: 15px 0;
     width: 40rem;
@@ -135,6 +140,80 @@ main {
 .principal li {
     margin-left: 20px;
 }
+
+.celular{
+    position: relative;
+}
+
+.celular #cell{
+    margin-top: 15px;
+    width: 22rem;
+}
+
+.celular .back{
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    z-index: -1;
+}
+
+.celular #wpp-header{
+    background-color: #0a5b52;
+    width: 14.5rem;
+    height: 3rem;
+    margin-bottom: 0;
+}
+
+.celular #wallpaper{
+    width: 15rem;
+}
+
+.balao-fala{
+    position: absolute; 
+    bottom: 15px; 
+    left: 85px; 
+    width: 36px; 
+    min-height: 36px;
+}
+
+#balao-fala-wpp{
+    position: absolute;
+    background-color:rgb(255, 255, 255);
+    margin: 0;
+    padding: 10px;
+    min-height: 20px;
+    max-height: 220px;
+    width: 160px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    -webkit-box-shadow: 0px 0 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0 3px rgba(0,0,0,0.25);
+    box-shadow: 0px 0 3px rgba(0,0,0,0.25); 
+    bottom: 45px;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+  }
+
+  #balao-fala-wpp::-webkit-scrollbar { 
+    display: none;
+}
+
+  .balao-fala:after {
+    position: absolute;
+    display: block;
+    content: "";  
+    border-color: transparent transparent rgb(255, 255, 255) transparent;
+    border-style: solid;
+    border-width: 10px;
+    height:0;
+    width:0;
+    position:absolute;
+    bottom: 45px;
+    left: 168px;
+
+  }
+
 
 .input-mensagem, .input-numero{ 
     display: flex;

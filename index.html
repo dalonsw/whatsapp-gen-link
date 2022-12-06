@@ -44,41 +44,59 @@
         </nav>
     </header>
     <main>
-        <section class="principal">
-            <div class="input-link">
-                <label for="link"><p>LINK GERADO</p>
-                </label>
-                <input type="text" id="link" name="link">
-            </div>
-            <div class="formulario">
-                <div class="input-numero">
-                    <label for="numero" ><p>NÚMERO DE TELEFONE</p></label>
-                    <input type="text" id="numero" name="numero" placeholder="(XX) X XXXX-XXXX" maxlength="11">
+        <div>
+            <div class="site">
+                <div class="principal">
+                    <div class="input-link">
+                        <label for="link"><p>LINK GERADO</p>
+                        </label>
+                        <input type="text" id="link" name="link">
+                    </div>
+                    <div class="formulario">
+                        <div class="input-numero">
+                            <label for="numero" ><p>NÚMERO DE TELEFONE</p></label>
+                            <input type="text" id="numero" name="numero" placeholder="(XX) X XXXX-XXXX" maxlength="11">
+                        </div>
+                        <div class="input-mensagem">
+                            <label for="mensagem" id="container-mensagem"><p>ESCREVA SUA MENSAGEM</p></label>
+                            <input type="text" id="mensagem" name="mensagem" placeholder="Escreva o texto">
+                        </div>
+                    </div>
+                    <div class="botoes">
+                        <button class="botao" id="botao-gerar" onclick="gerarLink()">GERAR LINK</button>
+                        <button class="botao" onclick="copyText()" id="botao-copiar-link">COPIAR LINK</button>
+                        <button class="botao" onclick="gerarOutroLink()" id="botao-gerar-outro">GERAR OUTRO LINK</button>
+                    </div>
+                    <p class="aviso">Não guardamos nenhum dado informado.</p>
+                    <article class="explicacao">
+                        <h2>Como Funciona</h2>
+                        <ol>
+                            <li><p>Insira o nº do WhatsApp Ex: 11 9 9999-9999</p></li>
+                            <li><p>Escreva a mensagem padrão que será exibida</p></li>
+                            <li><p>Clique em “<span>GERAR LINK</span>"</p></li>
+                            <li><p>Copie o link e compartilhe</p></li>
+                        </ol>
+                        <h3>OBS: Antes de usar, faça o teste</h3>
+                    </article>
+                    </div>
+                    <div class="celular">
+                        <img id="cell" src="assets/images/Mockup-IPhone-PNG-Grátis.png">
+                        <div class="back">
+                            <div id="wpp-header"></div>
+                            <img id="wallpaper" src="assets/images/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png">
+                        </div>
+                        <div>
+                            <div class="balao-fala">
+                                <div id="balao-fala-wpp"><p>Sua mensagem aparecerá aqui!</p></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="input-mensagem">
-                    <label for="mensagem" id="container-mensagem"><p>ESCREVA SUA MENSAGEM</p></label>
-                    <input type="text" id="mensagem" name="mensagem" placeholder="Escreva o texto">
+                <div class="descricao">
+                    <p>O gerador de links para o WhatsApp é uma ótima ferramenta para ações de marketing ou relacionamento. Com o link para mensagens personalizadas do WhatsApp, você poderá utilizar em campanhas, redes sociais, email marketing, banners e etc. O bom de encurtar e personalizar links e mensagens do WhatsApp é que funcionará no desktop e no mobile da mesma forma. Faça bom uso da ferramenta encurtadora de WhatsApp.
+                    </p>
                 </div>
             </div>
-            <div class="botoes">
-                <button class="botao" id="botao-gerar" onclick="gerarLink()">GERAR LINK</button>
-                <button class="botao" onclick="copyText()" id="botao-copiar-link">COPIAR LINK</button>
-                <button class="botao" onclick="gerarOutroLink()" id="botao-gerar-outro">GERAR OUTRO LINK</button>
-            </div>
-            <p class="aviso">Não guardamos nenhum dado informado.</p>
-            <article class="explicacao">
-                <h2>Como Funciona</h2>
-                <ol>
-                    <li><p>Insira o nº do WhatsApp Ex: 11 9 9999-9999</p></li>
-                    <li><p>Escreva a mensagem padrão que será exibida</p></li>
-                    <li><p>Clique em “<span>GERAR LINK</span>"</p></li>
-                    <li><p>Copie o link e compartilhe</p></li>
-                </ol>
-                <h3>OBS: Antes de usar, faça o teste</h3>
-            </article>
-        </section>
-        <p class="descricao">O gerador de links para o WhatsApp é uma ótima ferramenta para ações de marketing ou relacionamento. Com o link para mensagens personalizadas do WhatsApp, você poderá utilizar em campanhas, redes sociais, email marketing, banners e etc. O bom de encurtar e personalizar links e mensagens do WhatsApp é que funcionará no desktop e no mobile da mesma forma. Faça bom uso da ferramenta encurtadora de WhatsApp.
-        </p>
     </main>
     <footer class="rodape">
         <h5>Copyright 2022 - Gerador de Link para WhatsApp &copy; Todos os direitos reservados.
@@ -91,12 +109,15 @@
     <div class="erro">
         <p>Insira o Número de telefone!</p>
     </div>
-
     <script src="assets/js/jquery-3.6.1.min.js"></script>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/jquery.mask.js"></script>
     <script type="text/javascript">
         $('#numero').mask('(99) 9 9999-9999')
+        $('#mensagem').keyup(function () {
+            let mensagem = $(this).val();
+            $('#balao-fala-wpp p').text(mensagem);
+        })
     </script>
 </body>
 </html>
