@@ -82,7 +82,7 @@
                     <div class="celular">
                         <img id="cell" src="assets/images/Mockup-IPhone-PNG-Grátis.png">
                         <div class="back">
-                            <div id="wpp-header"></div>
+                            <div class="wpp-header"><img src="assets/images/default-avatar-profile-in-trendy-style-for-social-media-user-icon-400-228654852.jpg"><p id="wpp-header-number">(99) 9 9999-9999</p></div>
                             <img id="wallpaper" src="assets/images/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png">
                         </div>
                         <div>
@@ -117,6 +117,10 @@
         $('#mensagem').keyup(function () {
             let mensagem = $(this).val();
             $('#balao-fala-wpp p').text(mensagem);
+        })
+        $('#numero').keyup(function () {
+            let numero = $(this).val();
+            $('.wpp-header p').text(numero);
         })
     </script>
 </body>
