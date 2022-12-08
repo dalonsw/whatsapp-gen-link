@@ -382,7 +382,10 @@ main {
     font-size: 15pt;
     font-style: normal;
     font-weight: normal;
-    
+}
+
+.explicacao li span{
+    text-decoration: none;
 }
 
 .explicacao span {
@@ -484,7 +487,7 @@ main {
     
     .wpp-header{
         width: 13rem;
-        height: 3rem;
+        height: 3.4rem;
     }
 
     .wpp-header img{
@@ -498,7 +501,6 @@ main {
     }
     
     .balao-fala{
-
         bottom: 45px; 
         left: 75px; 
     }
@@ -510,6 +512,15 @@ main {
     .balao-fala:after {
         left: 160px;
       }
+
+    .wpp-header p{
+        bottom: 12px;
+    }
+
+    #wpp-header-online{
+        bottom: 11px;
+        font-size: 8pt;
+    }
 
     
 }
