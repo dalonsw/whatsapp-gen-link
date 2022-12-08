@@ -89,8 +89,14 @@ nav a:hover::after{
     position: absolute;
     z-index: 999;
     display: none;
-    justify-content: center;
     padding-top: 5rem;
+}
+
+.cabecalho-navegacao{
+    background-image: url(../images/background/ws_WhatsApp_Background_1920x1080.png);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 .menu-navegacao .whatsapp-logo{
@@ -115,6 +121,7 @@ nav a:hover::after{
 .menu-navegacao ul{
     margin: 10px 0;
     list-style: none;
+
 }
 
 .menu-navegacao ul li{
