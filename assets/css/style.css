@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
 
 * {
     padding: 0;
@@ -10,7 +10,7 @@ html, body {
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
 }
 
 .container-header {
@@ -115,14 +115,23 @@ body{
     display: none;
 }
 
+.index{
+    background-image: url(../images/background/ws_WhatsApp_Background_1920x1080.png);
+    background-position: 50%;
+    background-size: 100vw;
+}
+
 main {
+
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    z-index: -20;
+    z-index: -2;
+
 }
 
 .site {
+
     display: flex;
     justify-content: space-around;
 }
@@ -141,18 +150,21 @@ main {
 
 .celular{
     position: relative;
+    
 }
 
 .celular #cell{
     margin-top: 15px;
     width: 22rem;
+    position: relative;
+    z-index: 2;
 }
 
 .celular .back{
     position: absolute;
     top: 30px;
     left: 60px;
-    z-index: -1;
+    z-index: 0;
 }
 
 .wpp-header{
@@ -235,7 +247,20 @@ main {
     bottom: 45px;
     left: 168px;
     filter: drop-shadow(0px 0 3px rgba(0,0,0,0.20));
+  }
 
+.balao-fala:after {
+    position: absolute;
+    display: block;
+    content: "";  
+    border-color: transparent transparent rgb(255, 255, 255) transparent;
+    border-style: solid;
+    border-width: 10px;
+    height:0;
+    width:0;
+    position:absolute;
+    bottom: 45px;
+    left: 168px;
   }
 
 
@@ -340,7 +365,7 @@ main {
 
 .aviso {
     text-align: center;
-    color: #707070;
+    color: #ffffff;
     font-size: 10pt;
 }
 
@@ -364,27 +389,24 @@ main {
 }
 
 .explicacao h2{
-    color: #707070;
+    color: #ffffff;
     margin: 0;
 
 }
 
 .explicacao ol{
     margin-left: 30px;
-    color: #035a4f;
+    color: #ffffff;
     font-size: 18pt;
     font-style: oblique;
     font-weight: bolder;
 }
 
 .explicacao li p{
-    color: #707070;
+    color: #ffffff;
     font-size: 15pt;
     font-style: normal;
     font-weight: normal;
-}
-
-.explicacao li span{
     text-decoration: none;
 }
 
@@ -396,7 +418,7 @@ main {
     font-size: 15pt;
     font-weight: normal;
     margin: 20px 0;
-    color: #035a4f;
+    color: #ffffff;
 }
 
 .descricao {
@@ -407,6 +429,7 @@ main {
 }
 
 .descricao p {
+    color: #fff;
     margin: 0 3% 5%;
 }
 
@@ -520,6 +543,10 @@ main {
     #wpp-header-online{
         bottom: 11px;
         font-size: 8pt;
+    }
+
+    .index {
+        background-image: url(../images/background/ws_WhatsApp_Background_480x800.png);
     }
 
     
