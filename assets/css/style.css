@@ -176,7 +176,14 @@ main {
     color: #fff;
     position: relative;
     left: 50px;
+    bottom: 14px;
+    text-decoration: none;
+}
+
+#wpp-header-online{
+    left: 52px;
     bottom: 13px;
+    font-size: 8pt;
 }
 
 .celular #wallpaper{
@@ -193,6 +200,7 @@ main {
 }
 
 #balao-fala-wpp{
+    color: #707070;
     position: absolute;
     background-color:rgb(255, 255, 255);
     margin: 0;
@@ -478,6 +486,12 @@ main {
         width: 13rem;
         height: 3rem;
     }
+
+    .wpp-header img{
+        width: 28px;
+        top: 17px;
+
+    }
     
     .celular #wallpaper{
         width: 13.5rem;
@@ -493,9 +507,10 @@ main {
         width: 150px;
       }
     
-      .balao-fala:after {
+    .balao-fala:after {
         left: 160px;
       }
+
     
 }
 
