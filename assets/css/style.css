@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
 
+@keyframes subilinhado{
+
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -53,12 +57,29 @@ body{
 }
 
 .navegacao ul li{
-    padding: 0 15px;
+    padding: 0 20px;
+    cursor: pointer;
 }
 
 .navegacao a{
     color: #fff;
     text-decoration: none;
+    position: relative;
+}
+
+.navegacao a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    transition: 0.3s;
+}
+
+nav a:hover::after{
+    width: 100%;
 }
 
 .menu-navegacao{
@@ -131,7 +152,6 @@ main {
 }
 
 .site {
-
     display: flex;
     justify-content: space-around;
 }
@@ -150,11 +170,14 @@ main {
 
 .celular{
     position: relative;
-    
+}
+
+.cell-container{
+    position: relative;
 }
 
 .celular #cell{
-    margin-top: 15px;
+    margin-top: 30px;
     width: 22rem;
     position: relative;
     z-index: 2;
@@ -167,11 +190,20 @@ main {
     z-index: 0;
 }
 
+#detail1 {
+    position: absolute;
+    width: 10em;
+    bottom: 30px;
+    left: 10px;
+    z-index: 3;
+}
+
 .wpp-header{
     background-color: #0a5b52;
+    position: relative;
+    top: 10px;
     width: 14.5rem;
     height: 3.5rem;
-    margin-bottom: 0;
 }
 
 .wpp-header img{
@@ -188,12 +220,12 @@ main {
     color: #fff;
     position: relative;
     left: 50px;
-    bottom: 14px;
+    bottom: 10px;
     text-decoration: none;
 }
 
 .celular #wallpaper{
-    width: 15rem;
+    width: 15.2rem;
     border-radius: 0 0 10% 10%;
 }
 
@@ -307,6 +339,10 @@ main {
     position: absolute;
 }
 
+#link-copiado{
+    
+}
+
 .botoes {
     display: flex;
     justify-content: center;
@@ -329,10 +365,19 @@ main {
 
 .botao:hover{
     background-color: #035a4f;
+    background-image: linear-gradient(90deg,#0a6e61, #16b851);
 }
 
 #botao-gerar-outro, #botao-copiar-link{
+    font-size: 16pt;
+    width: 11em;
     display: none;
+}
+
+.link-copiado{
+color: #fff;
+margin: 0 146px;
+display: none;
 }
 
 .aviso {
@@ -353,19 +398,13 @@ main {
     position: fixed;
     bottom: 0; 
     transition: 1s;
+    z-index: 9999;
 }
 
 .explicacao{
     margin: 50px 5%;
     margin-bottom: 0;
     position: relative;
-}
-
-#detail1{
-    position: absolute;
-    width: 5rem;
-    margin-left: 28rem;
-    bottom: 80px;
 }
 
 .explicacao h2{
@@ -375,8 +414,8 @@ main {
 }
 
 .explicacao ol{
-    margin-left: 30px;
-    color: #ffffff;
+    margin-left: 25px;
+    color: #25d366;
     font-size: 18pt;
     font-style: oblique;
     font-weight: bolder;
@@ -400,6 +439,7 @@ main {
     font-weight: normal;
     margin: 20px 0;
     color: #ffffff;
+    font-style: italic;
 }
 
 .descricao {
@@ -411,7 +451,7 @@ main {
 
 .descricao p {
     color: #fff;
-    margin: 0 3% 5%;
+    margin: 0 3% 2%;
 }
 
 .rodape {
@@ -453,12 +493,11 @@ main {
         padding-right: 1rem;
     }
     .celular #cell{
-        margin-top: 15px;
         width: 20rem;
     }
     
     .celular .back{
-        top: 25px;
+        top: 30px;
         left: 55px;
     }
     
@@ -474,7 +513,7 @@ main {
     }
     
     .celular #wallpaper{
-        width: 13.5rem;
+        width: 13.7rem;
     }
     
     .balao-fala{
@@ -500,7 +539,7 @@ main {
     }
 }
 
-@media screen and (max-width: 780px ) {
+@media screen and (max-width: 782px ) {
     .principal{
         width: 90%;
     }
@@ -535,12 +574,6 @@ main {
         background-size: 200vw;
     }
 
-    #detail1{
-        top: 120px;
-        right: -1px;
-        margin-left: 0;
-    }
-
 }
 
 @media screen and (max-width: 719px ) {
@@ -548,15 +581,19 @@ main {
         flex-wrap: wrap;
     }
 
-    #detail1{
-        display: none;  
-    }
-
 }
 
-@media screen and (max-width: 826px) {
+@media screen and (max-width: 833px) and (min-width: 828px) {
     #detail1{
-        margin-left: 24rem;
+        bottom: 50px
     }
+    
+}
+
+@media screen and (max-width: 828px) and (min-width: 720px) {
+    #detail1{
+        bottom: 60px
+    }
+    
 }
 
