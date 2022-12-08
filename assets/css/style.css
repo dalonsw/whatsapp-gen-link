@@ -15,7 +15,7 @@ body{
 
 .container-header {
     padding: 1rem 0;
-    background-color: #128c7e;
+    background-image: linear-gradient(90deg,#128c7e, #25d366);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -62,7 +62,7 @@ body{
 }
 
 .menu-navegacao{
-    background-color: #0a5b52;
+    background-image: linear-gradient(90deg,#128c7e, #25d366);
     height: 200vh;
     width: 100vw;
     position: absolute;
@@ -264,7 +264,7 @@ main {
   }
 
 
-.input-mensagem, .input-numero{ 
+.input-mensagem, .input-numero, .input-link{ 
     background-color: white;
     display: flex;
     margin: 15px;
@@ -279,13 +279,6 @@ main {
 
 .input-link { 
     display: none;
-    margin: 15px 0; 
-    padding: 5px;
-    border: solid 1px #adadad;
-    border-radius: 5px;
-    height: 3em;
-    flex-direction: column;position: relative;
-    cursor: pointer;
 }
 
 .input-mensagem input, .input-numero input, .input-link input{
@@ -338,16 +331,17 @@ main {
 .botoes {
     display: flex;
     justify-content: center;
+
 }
 
 .botao{
     font-weight: 600;
     font-size: 18pt;
     margin: 10px;
-    background-color: #128c7e;
+    background-image: linear-gradient(90deg,#128c7e, #25d366);
     color: #fff;
     border: unset;
-    border-radius: 4px;
+    border-radius: 90px;
     width: 12em;
     height: 3em;
     cursor: pointer;
@@ -357,7 +351,6 @@ main {
 .botao:hover{
     background-color: #035a4f;
 }
-
 
 #botao-gerar-outro, #botao-copiar-link{
     display: none;
@@ -386,6 +379,20 @@ main {
 .explicacao{
     margin: 50px 5%;
     margin-bottom: 0;
+    position: relative;
+}
+
+#detail1{
+    position: absolute;
+    width: 5rem;
+    margin-left: 28rem;
+    bottom: 80px;
+}
+
+#detail2{
+    display: none;
+    position: absolute;
+    width: 5rem;
 }
 
 .explicacao h2{
@@ -471,33 +478,6 @@ main {
         display: none;
         padding-right: 1rem;
     }
-}
-
-@media screen and (max-width: 768px ) {
-    .principal{
-        width: 90%;
-    }
-
-    main {
-        height: initial;
-    }
-    .input-mensagem, .input-numero,     .input-link { 
-        margin: 15px;
-    }
-
-    .botoes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .botao{
-        font-size: 16pt;
-        width: 12em;
-        height: 2.5em;
-    }
-    
     .celular #cell{
         margin-top: 15px;
         width: 20rem;
@@ -544,16 +524,65 @@ main {
         bottom: 11px;
         font-size: 8pt;
     }
-
-    .index {
-        background-image: url(../images/background/ws_WhatsApp_Background_480x800.png);
-    }
-
-    
 }
 
-@media screen and (max-width: 601px ) {
+@media screen and (max-width: 780px ) {
+    .principal{
+        width: 90%;
+    }
+
+    main {
+        height: initial;
+    }
+    .input-mensagem, .input-numero,     .input-link { 
+        margin: 15px;
+    }
+
+    .botoes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .botoes img{
+        width: 8rem;
+    }
+
+    .botao{
+        font-size: 16pt;
+        width: 12em;
+        height: 2.5em;
+    }
+    
+    
+    .index {
+        background-position: 50%;
+        background-size: 200vw;
+    }
+
+    #detail1{
+        top: 120px;
+        right: -1px;
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 719px ) {
     .site {
         flex-wrap: wrap;
     }
+
+    #detail1{
+        display: none;  
+    }
+
 }
+
+@media screen and (max-width: 826px) {
+    #detail1{
+        margin-left: 24rem;
+    }
+}
+
