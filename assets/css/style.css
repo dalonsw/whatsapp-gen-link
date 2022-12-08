@@ -368,12 +368,6 @@ main {
     bottom: 80px;
 }
 
-#detail2{
-    display: none;
-    position: absolute;
-    width: 5rem;
-}
-
 .explicacao h2{
     color: #ffffff;
     margin: 0;
@@ -393,10 +387,11 @@ main {
     font-size: 15pt;
     font-style: normal;
     font-weight: normal;
-    text-decoration: none;
+
 }
 
 .explicacao span {
+    text-decoration: none;
     font-weight: 600;
 }
 
