@@ -144,7 +144,7 @@ nav a:hover::after{
 }
 
 .index{
-    background-image: url(../images/background/ws_WhatsApp_Background_1920x1080.png);
+    background-image: url(../images/background/background.png);
     background-position: 50%;
     background-size: 100vw;
 }
