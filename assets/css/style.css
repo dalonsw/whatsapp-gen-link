@@ -93,7 +93,8 @@ nav a:hover::after{
 }
 
 .cabecalho-navegacao{
-    background-image: url(../images/background/ws_WhatsApp_Background_1920x1080.png);
+    background-image: url(../images/background/gerador-de-link-para-whatsapp.png);
+    background-size: 100%;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -144,7 +145,7 @@ nav a:hover::after{
 }
 
 .index{
-    background-image: url(../images/background/background.png);
+    background-image: url(../images/background/gerador-de-link-para-whatsapp.png);
     background-position: 50%;
     background-size: 100vw;
 }
@@ -324,7 +325,7 @@ main {
     margin: 10px;
     height: 24px;
     width: 24px;
-    background-image: url(../images/icons/comente.png);
+    background-image: url(../images/icons/gerador-de-link-para-whatsapp\(2\).png);
     position: absolute;
 }
 
@@ -333,7 +334,7 @@ main {
     margin: 10px;
     height: 24px;
     width: 24px;
-    background-image: url(../images/icons/silhueta-de-alca-de-telefone.png);
+    background-image: url(../images/icons/gerador-de-link-para-whatsapp\(4\).png);
     position: absolute;
 }
 
@@ -342,12 +343,8 @@ main {
     margin: 10px;
     height: 24px;
     width: 24px;
-    background-image: url(../images/icons/link-quebrado.png);
+    background-image: url(../images/icons/gerador-de-link-para-whatsapp\(1\).png);
     position: absolute;
-}
-
-#link-copiado{
-    
 }
 
 .botoes {
