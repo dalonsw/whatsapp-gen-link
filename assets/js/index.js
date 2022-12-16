@@ -47,7 +47,6 @@ function mostrarErro(){
 function copyText() {
     var copyText = document.getElementById("link");
     copyText.select();
-    copyText.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(copyText.value);
     $('.link-copiado').css("display", "block");
   }
